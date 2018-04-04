@@ -1,1 +1,5 @@
 bc0364,127.0.0.1,GET,http://localhost:8000/,1522803548,,200
+8605d3,127.0.0.1,GET,http://localhost:8000/,1522808089,,200
+411b7e,127.0.0.1,GET,http://localhost:8000/guests,1522808092,,200
+436dc7,127.0.0.1,GET,http://localhost:8000/guests,1522808248,,200
+f6a88e,127.0.0.1,GET,http://localhost:8000/guests,1522808307,,200
