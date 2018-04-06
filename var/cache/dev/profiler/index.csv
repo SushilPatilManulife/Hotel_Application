@@ -1,5 +1,5 @@
-bc0364,127.0.0.1,GET,http://localhost:8000/,1522803548,,200
-8605d3,127.0.0.1,GET,http://localhost:8000/,1522808089,,200
-411b7e,127.0.0.1,GET,http://localhost:8000/guests,1522808092,,200
-436dc7,127.0.0.1,GET,http://localhost:8000/guests,1522808248,,200
-f6a88e,127.0.0.1,GET,http://localhost:8000/guests,1522808307,,200
+aae32b,127.0.0.1,GET,http://localhost:8000/,1522940609,,200
+78e8fa,127.0.0.1,GET,http://localhost:8000/,1522941271,,200
+2cae51,127.0.0.1,GET,http://localhost:8000/guests,1522941274,,200
+52bea9,127.0.0.1,GET,http://localhost:8000/reservations,1522941276,,200
+fcc65d,127.0.0.1,GET,http://localhost:8000/,1522941278,,200
