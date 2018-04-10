@@ -121,8 +121,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             // modify_clients
-            if ($pathinfo === '/guests/modify') {
-                return array (  '_controller' => 'AppBundle\\Controller\\ClientsController::showDetails',  '_route' => 'modify_clients',);
+            if (0 === strpos($pathinfo, '/guests/modify') && preg_match('#^/guests/modify/(?P<id_client>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'modify_clients')), array (  '_controller' => 'AppBundle\\Controller\\ClientsController::showDetails',));
             }
 
             // new_client

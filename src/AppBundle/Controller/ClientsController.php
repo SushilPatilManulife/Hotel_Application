@@ -57,22 +57,29 @@ class ClientsController extends Controller
     }
 
     /**
-    *@Route("/guests/modify", name="modify_clients")
+    *@Route("/guests/modify/{id_client}", name="modify_clients")
     **/
-    public function showDetails()
+    public function showDetails(Request $request, $id_client)
     {
-
-
-
+          $data=[];
+          $data['clients'] = $this->client_data;
+          $data['mode'] = 'modify';
+          $data['form']=[];
+        
+          $client_data = $this->client_data[$id_client];
+          $data['form']=$client_data;
+         $data['titles'] = $this->titles;
+          return $this->render('clients/form.html.twig',$data);
     }
 
     /**
     *@Route("/guests/new", name="new_client")
     **/
-    public function showNew()
+    public function showNew(Request $request)
     {
-
-
+      $data=[];
+      $data['mode'] = 'new_client';
+      return $this->render('clients/form.html.twig',$data);
     }
 
 }
